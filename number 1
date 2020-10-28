@@ -1,0 +1,24 @@
+#old inventory start
+inventory = {
+    'gold' : 500,
+    'pouch' : ['flint', 'twine', 'gemstone'],
+    'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+
+#add 'pocket' to inventory with a list
+inventory['pocket'] = ['seashell', 'strange berry', 'lint']
+
+#sorts backpack and print command
+inventory['backpack'].sort()
+print(inventory['backpack'])
+
+#remove dagger from backpack and print command
+inventory['backpack'].remove('dagger')
+print(inventory['backpack'])
+
+#add 50 to number stored in gold and print command
+inventory['gold'] = inventory['gold'] + 50
+print(inventory['gold'])
+
+#new inventory finish
+print(inventory)
