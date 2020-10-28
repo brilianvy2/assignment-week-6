@@ -1,0 +1,32 @@
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+
+groceries = ["banana", "orange", "apple"]
+
+#compute_bill function
+def compute_bill(groceries):
+    total = 0
+    #for loop inside list
+    for fruit in groceries:
+        if stock[fruit] > 0:
+            #sums all prices
+            total += prices[fruit]
+            stock[fruit] = stock[fruit] - 1
+        else:
+            break
+    return total
+
+
+print(compute_bill(groceries))
+print(stock)
