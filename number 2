@@ -1,0 +1,26 @@
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+#item, prices and stock
+for x in prices or stock:
+    print(x) 
+    print("prices:{}".format(prices.get(x)))
+    print("stock:{}".format(stock.get(x)))
+
+
+total = 0
+#total of money
+for x in prices or stock:
+    money = prices.get(x)*stock.get(x)
+    total += money
+print(total)
